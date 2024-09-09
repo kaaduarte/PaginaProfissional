@@ -6,6 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página profissional de uma desenvolvedora freelancer moderna e criativa">
     <title>Desenvolvedora Freelancer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: <link rel="preconnect" href="https://fonts.googleapis.com" > <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" >;
+            line-height: 1.6;
+            color: rgb(41, 37, 34);
+            background-color: rgb(223, 210, 200);
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*Cabeçalho*/
+        header {
+            background-color: rgb(175, 192, 230);
+            color: rgb(41, 37, 34);
+            padding: 1rem 0;
+        }
+
+        header .logo {
+            text-align: center;
+            color: rgb(73, 65, 65);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: rgb(94, 92, 91);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        header nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        header nav ul li a {
+            color: rgb(44, 43, 46);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: rgb(149, 80, 212);
+        }
+
+        /*Seção de introdução*/
+        #intro {
+            background: url("https://blog.gokursos.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-768x512.jpg") no-repeat center center/cover;
+            color: rgba(229, 234, 238, 0.979);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        #intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: rgb(220, 220, 228);
+        }
+
+        #intro p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        #intro .btn {
+            background-color: rgb(150, 174, 226);
+            color: antiquewhite;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        #intro .btn:hover {
+            background-color: rgb(149, 80, 212);
+        }
+
+        /* Seção sobre*/
+        #sobre {
+            padding: 4rem 0;
+            background-color: rgb(229, 224, 238, 0.979);
+        }
+
+        #sobre h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: rgb(41, 37, 34);
+        }
+
+        #sobre p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: rgb(41, 37, 34);
+        }
+
+#sobre .social-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#sobre .social-links a {
+    color: blue;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#sobre .social-links a:hover {
+    color: rgb(149, 80, 212);
+}
+    </style>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -43,7 +180,7 @@
         <div class="container">
             <h2>Sobre Mim</h2>
             <p>Sou uma desenvolvedora freelancer apaixonada por tecnologia e inovação. Tenho experiência em diversas
-                tecnologias e estou sempre em busca de novos desafios para criar soluções eficientes e criativas</p>
+                tecnologias e estou sempre em busca de novos desafios para criar soluções eficientes e criativas.</p>
             <div class="social-links">
                 <a href="https://github.com/kaaduarte" target="_blank">GitHub</a>
                 <a href="https://br.linkedin.com/in/karla-duarte-2a500a155" target="_blank">LinkedIn</a>
@@ -114,18 +251,21 @@
 
     <!--Seção de Contato-->
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Interessada em trabalhar juntas? Vamos conversar! Preencha o formulário abaixo ou envie um e-mail diretamente
-            para <strong>programacaoduarte@gmail.com</strong></p>
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Interessada em trabalhar juntas? Vamos conversar! Preencha o formulário abaixo ou envie um e-mail
+                diretamente
+                para <strong>programacaoduarte@gmail.com</strong></p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
     <!--Rodapé-->
     <footer>
