@@ -17,7 +17,7 @@
             font-family: <link rel="preconnect" href="https://fonts.googleapis.com" > <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" >;
             line-height: 1.6;
             color: rgb(41, 37, 34);
-            background-color: rgb(223, 210, 200);
+            background-color: rgb(229, 224, 238, 0.979);
         }
 
         /* Container */
@@ -126,24 +126,93 @@
             color: rgb(41, 37, 34);
         }
 
-#sobre .social-links {
+        #sobre .social-links {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        #sobre .social-links a {
+            color: blue;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        #sobre .social-links a:hover {
+            color: rgb(149, 80, 212);
+        }
+
+        /* Seção habilidades */
+        .skill h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: rgb(73, 63, 71);
+        }
+
+        .progress {
+            background-color: rgb(98, 96, 100);
+            border-radius: 20px;
+            overflow: hidden;
+            height: 10px;
+        }
+
+        .progress-bar {
+            background-color: rgb(149, 80, 212);
+            height: 100%;
+            border-radius: 20px;
+        }
+
+/* Seção Portfólio*/
+#portfolio {
+    padding: 4rem 0;
+    background-color: (229, 224, 238, 0.979);
+}
+
+#portfolio h2 {
     text-align: center;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
 }
 
-#sobre .social-links a {
-    color: blue;
-    margin: 0 1rem;
-    text-decoration: none;
-    transition: color 0.3s;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#sobre .social-links a:hover {
-    color: rgb(149, 80, 212);
+.project {
+flex: 1 1 30%;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.project img {
+    max-width: 74%;
+    max-height: 74%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#imagem2 {
+    max-width: 99%;
+    max-height: 98%;
+}
+
+.project img:hover {
+    transform: scale(1.33);
+}
+
+.project h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #5c4e63;
 }
     </style>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -233,7 +302,7 @@
                 </div>
 
                 <div class="project">
-                    <img src="https://www.superti360.com.br/wp-content/uploads/2022/02/0-destaque-linguagens-de-programacao-2019.jpg"
+                    <img id= "imagem2" src="https://www.superti360.com.br/wp-content/uploads/2022/02/0-destaque-linguagens-de-programacao-2019.jpg"
                         alt="Projeto 2">
                     <h3>Projeto 2</h3>
                     <p>Descrição do projeto 2. Inclui tecnologias usadas e o impacto do projeto.</p>
